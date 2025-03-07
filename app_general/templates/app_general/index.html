@@ -1,0 +1,84 @@
+{% extends 'app_general/components/base.html' %}
+{% load static %}
+
+<!-- Title  -->
+{% block title %} Home {% endblock %}
+
+
+
+
+{% block content %}
+<!-- Hero  -->
+{% include 'app_general/components/hero.html' %}
+
+<!-- Products Casual  -->
+{% include 'app_general/options/casual_products.html' %}
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-center">
+      <h3>We know design.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="w3-button w3-black w3-hover-yellow w3-round-large w3-hover-shadow"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="{% static 'app_general/img/banners/office.jpg' %}" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-teal">
+        <img src="{% static 'app_general/img/teams/Jinwoo_Anime_Season_2.webp' %}" alt="Jinwoo_Anime_Season_2" style="width:100%">
+        <div class="w3-container">
+          <h3>Sung Jinwoo</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block w3-round-large w3-hover-yellow w3-hover-shadow"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card w3-teal">
+          <img src="{% static 'app_general/img/teams/Jinwoo_Anime_Season_2.webp' %}" alt="Jinwoo_Anime_Season_2" style="width:100%">
+          <div class="w3-container">
+            <h3>Sung Jinwoo</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block w3-round-large w3-hover-yellow w3-hover-shadow"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card w3-teal">
+          <img src="{% static 'app_general/img/teams/Jinwoo_Anime_Season_2.webp' %}" alt="Jinwoo_Anime_Season_2" style="width:100%">
+          <div class="w3-container">
+            <h3>Sung Jinwoo</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block w3-round-large w3-hover-yellow w3-hover-shadow"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card w3-teal">
+          <img src="{% static 'app_general/img/teams/Jinwoo_Anime_Season_2.webp' %}" alt="Jinwoo_Anime_Season_2" style="width:100%">
+          <div class="w3-container">
+            <h3>Sung Jinwoo</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block w3-round-large w3-hover-yellow w3-hover-shadow"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>   
+  </div>
+</div>
+
+
+{% endblock %}

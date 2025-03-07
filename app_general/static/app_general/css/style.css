@@ -1,0 +1,74 @@
+/* arima-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/arima-v5-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+body,h1,h2,h3,h4,h5,h6,p, button,div {font-family: "Arima" !important}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position:center top;
+  background-size: cover;
+  background-image: url("../img/banners/bg-banner-1.webp");
+  min-height: 80%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+/* logo size  */
+.logo-head{
+    width: 50px;
+    height: auto;
+}
+
+
+
+
+
+/************ Our Products casual ************/
+      
+        .slider-container {
+          position: relative;
+          width: 80%;
+          margin: auto;
+          overflow: hidden;
+      }
+
+      .slider {
+          display: flex;
+          transition: transform 0.5s ease-in-out;
+      }
+
+      .slider .w3-card-4 {
+          flex: 0 0 30%;
+          margin: 10px;
+      }
+
+    
+      .slider-btn {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: none;
+          padding: 10px;
+          font-size: 24px;
+          cursor: pointer;
+          z-index: 10;
+      }
+
+      .prev { left: 0; }
+      .next { right: 0; }

@@ -1,0 +1,101 @@
+{% load static %}
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-container w3-bar w3-white w3-card" id="myNavbar">
+        <a href="{% url 'index' %}" class="w3-bar-item w3-button w3-darkgreen w3-hover-none w3-hover-darkgreen w3-round-large w3-padding">
+            <img class="logo-head" src="{% static 'app_general/img/logo/logo_1.png' %}" alt="company logo">
+            <span class="w3-large"><strong>JLS</strong></span>
+        </a>
+        
+        <!-- Right-side menu for large screens -->
+        <div class="w3-right w3-hide-small">
+            <a href="{% url 'index' %}" class="w3-bar-item w3-button w3-hover-none w3-text-green w3-hover-darkgreen">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-green w3-hover-darkgreen">Products</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-green w3-hover-darkgreen">Controls</a>
+            
+            <div class="w3-dropdown-hover">
+                <button class="w3-button w3-hover-none w3-text-green w3-hover-darkgreen">
+                    Support <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-opacity w3-lightgrey">
+                    <a href="#" class="w3-bar-item w3-button w3-hover-bg-green w3-hover-white">Warranty Registration</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-bg-green w3-hover-white">Installation Guides</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-bg-green w3-hover-white">Become a Distributor</a>
+                </div>
+            </div>
+
+            <a href="{% url 'about' %}" class="w3-bar-item w3-button w3-hover-none w3-text-green w3-hover-darkgreen">About</a>
+            <a href="{% url 'contact' %}" class="w3-bar-item w3-button w3-hover-none w3-text-green w3-hover-darkgreen">Contact Us</a>
+
+            <!-- Search Button -->
+            <div class="w3-bar-item" style="margin-left: 50px;">
+                <button class="w3-button w3-hover-none w3-text-green w3-hover-darkgreen" style="padding: 10px 16px;" onclick="togglePopup()">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+                <!-- Search popup  -->
+                <div id="popup" class="w3-modal " style="display:none;">
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <header class="w3-container w3-bg-darkgreen">
+                            <span onclick="togglePopup()" class="w3-button w3-display-topright">&times;</span>
+                            <h4 class="w3-center">Find Your Products</h4>
+                        </header>
+                        <div class="w3-container">
+                            <p class="w3-darkgreen">Type your product name here!!!</p>
+                            <div class="w3-padding-24 w3-center">
+                                <input type="search" name="search" id="search" class="w3-border-green w3-center w3-margin-24" placeholder="Enter you product name" style="width: 100%;"><br>
+                                <label class="w3-button w3-white w3-bg-green w3-hover-bg-darkorange w3-hover-text-white w3-hover-shadow w3-round-large" for="search" style="margin: 10px; width: 200px;">Find</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Language Dropdown -->
+            <div class="w3-dropdown-hover">
+                <button class="w3-button w3-hover-none w3-text-green w3-hover-darkgreen">
+                    Language <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="w3-dropdown-content w3-bar-block w3-animate-opacity w3-lightgrey">
+                    <a href="#" class="w3-bar-item w3-button w3-hover-bg-green w3-hover-white" style="padding: 6px 8px;">
+                        <img class="w3-round-small" src="{% static 'app_general/img/logo/flags/En.png' %}" alt="en flag" style="width: 20px;">
+                        <span>EN</span>
+                    </a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-bg-green w3-hover-white" style="padding: 6px 8px;">
+                        <img class="w3-round-small" src="{% static 'app_general/img/logo/flags/lao.png' %}" alt="en flag" style="width: 20px;">
+                        <span>LO</span>
+                    </a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-bg-green w3-hover-white" style="padding: 6px 8px;">
+                        <img class="w3-round-small" src="{% static 'app_general/img/logo/flags/thai.png' %}" alt="en flag" style="width: 20px;">
+                        <span>TH</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-none w3-darkgreen" onclick="w3_open()">
+            <i class="fa fa-bars w3-xlarge"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar for mobile -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="{% url 'index' %}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-bg-white w3-hover-green">Home</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-bg-white w3-hover-green">Products</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-bg-white w3-hover-green">Controls</a>
+    
+    <div class="w3-dropdown-click">
+        <button onclick="toggleDropdown()" class="w3-button w3-bar-item w3-hover-bg-white w3-hover-green">Support <i class="fa fa-caret-down"></i></button>
+        <div id="supportDropdown" class="w3-hide w3-lightgrey w3-bar-block">
+            <a href="#" class="w3-bar-item w3-button w3-hover-bg-white w3-hover-green">Warranty Registration</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-bg-white w3-hover-green">Installation Guides</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-bg-white w3-hover-green">Become a Distributor</a>
+        </div>
+    </div>
+
+    <a href="{% url 'about' %}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-bg-white w3-hover-green">About</a>
+    <a href="{% url 'contact' %}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-bg-white w3-hover-green">Contact Us</a>
+</nav>

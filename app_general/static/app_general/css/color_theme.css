@@ -1,0 +1,220 @@
+/* How to get this colors with w3.css  */
+/**
+<p class="w3-green">Text color</p>
+
+<div class="w3-bg-green">bg color</div>
+
+<a href="#" class="w3-hover-green">hover color</a>
+
+<button class="w3-btn w3-hover-bg-darkorange">bg hover color</button>
+
+**/
+/* Custom Colors */
+.w3-green {
+  color: #219045 !important;
+}
+.w3-darkgreen {
+  color: #134F37 !important;
+}
+.w3-lightgreen {
+  color: #0CA300 !important;
+}
+.w3-darkorange {
+  color: #FF7E01 !important;
+}
+.w3-lightorange {
+  color: #FE9A46 !important;
+}
+.w3-darkblue {
+  color: #2F2C92 !important;
+}
+.w3-white {
+  color: #FCFCFB !important;
+}
+.w3-dark {
+  color: #343035 !important;
+}
+
+/* Background Colors */
+.w3-bg-green {
+  background-color: #219045 !important;
+}
+.w3-bg-darkgreen {
+  background-color: #134F37 !important;
+}
+.w3-bg-lightgreen {
+  background-color: #0CA300 !important;
+}
+.w3-bg-darkorange {
+  background-color: #FF7E01 !important;
+}
+.w3-bg-lightorange {
+  background-color: #FE9A46 !important;
+}
+.w3-bg-darkblue {
+  background-color: #2F2C92 !important;
+}
+.w3-bg-white {
+  background-color: #FCFCFB !important;
+}
+.w3-bg-dark {
+  background-color: #343035 !important;
+}
+
+/* Hover Colors */
+.w3-hover-green:hover {
+  color: #219045 !important;
+}
+.w3-hover-darkgreen:hover {
+  color: #134F37 !important;
+}
+.w3-hover-lightgreen:hover {
+  color: #0CA300 !important;
+}
+.w3-hover-darkorange:hover {
+  color: #FF7E01 !important;
+}
+.w3-hover-lightorange:hover {
+  color: #FE9A46 !important;
+}
+.w3-hover-darkblue:hover {
+  color: #2F2C92 !important;
+}
+.w3-hover-white:hover {
+  color: #FCFCFB !important;
+}
+.w3-hover-dark:hover {
+  color: #343035 !important;
+}
+
+/* Background Hover Colors */
+.w3-hover-bg-green:hover {
+  background-color: #219045 !important;
+}
+.w3-hover-bg-darkgreen:hover {
+  background-color: #134F37 !important;
+}
+.w3-hover-bg-lightgreen:hover {
+  background-color: #0CA300 !important;
+}
+.w3-hover-bg-darkorange:hover {
+  background-color: #FF7E01 !important;
+}
+.w3-hover-bg-lightorange:hover {
+  background-color: #FE9A46 !important;
+}
+.w3-hover-bg-darkblue:hover {
+  background-color: #2F2C92 !important;
+}
+.w3-hover-bg-white:hover {
+  background-color: #FCFCFB !important;
+}
+.w3-hover-bg-dark:hover {
+  background-color: #343035 !important;
+}
+
+
+/* Custom Colors */
+.w3-green {
+    color: #219045 !important;
+  }
+  .w3-darkgreen {
+    color: #134F37 !important;
+  }
+  .w3-lightgreen {
+    color: #0CA300 !important;
+  }
+  .w3-darkorange {
+    color: #FF7E01 !important;
+  }
+  .w3-lightorange {
+    color: #FE9A46 !important;
+  }
+  .w3-darkblue {
+    color: #2F2C92 !important;
+  }
+  .w3-white {
+    color: #FCFCFB !important;
+  }
+  .w3-dark {
+    color: #343035 !important;
+  }
+  
+  /* Background Colors */
+  .w3-bg-green {
+    background-color: #219045 !important;
+  }
+  .w3-bg-darkgreen {
+    background-color: #134F37 !important;
+  }
+  .w3-bg-lightgreen {
+    background-color: #0CA300 !important;
+  }
+  .w3-bg-darkorange {
+    background-color: #FF7E01 !important;
+  }
+  .w3-bg-lightorange {
+    background-color: #FE9A46 !important;
+  }
+  .w3-bg-darkblue {
+    background-color: #2F2C92 !important;
+  }
+  .w3-bg-white {
+    background-color: #FCFCFB !important;
+  }
+  .w3-bg-dark {
+    background-color: #343035 !important;
+  }
+  
+  /* Hover Colors */
+  .w3-hover-green:hover {
+    color: #219045 !important;
+  }
+  .w3-hover-darkgreen:hover {
+    color: #134F37 !important;
+  }
+  .w3-hover-lightgreen:hover {
+    color: #0CA300 !important;
+  }
+  .w3-hover-darkorange:hover {
+    color: #FF7E01 !important;
+  }
+  .w3-hover-lightorange:hover {
+    color: #FE9A46 !important;
+  }
+  .w3-hover-darkblue:hover {
+    color: #2F2C92 !important;
+  }
+  .w3-hover-white:hover {
+    color: #FCFCFB !important;
+  }
+  .w3-hover-dark:hover {
+    color: #343035 !important;
+  }
+  
+  /* Background Hover Colors */
+  .w3-hover-bg-green:hover {
+    background-color: #219045 !important;
+  }
+  .w3-hover-bg-darkgreen:hover {
+    background-color: #134F37 !important;
+  }
+  .w3-hover-bg-lightgreen:hover {
+    background-color: #0CA300 !important;
+  }
+  .w3-hover-bg-darkorange:hover {
+    background-color: #FF7E01 !important;
+  }
+  .w3-hover-bg-lightorange:hover {
+    background-color: #FE9A46 !important;
+  }
+  .w3-hover-bg-darkblue:hover {
+    background-color: #2F2C92 !important;
+  }
+  .w3-hover-bg-white:hover {
+    background-color: #FCFCFB !important;
+  }
+  .w3-hover-bg-dark:hover {
+    background-color: #343035 !important;
+  }
+  
